@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bedem Apartments | Nikšić, Montenegro</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ══════════════════════════════════════════ -->
+<!--  NAVIGATION                               -->
+<!-- ══════════════════════════════════════════ -->
+<header class="header" id="mainHeader">
+    <div class="nav-container">
+        <a href="index.html" class="logo">
+            <span class="logo-icon">⬡</span>
+            <div class="logo-text">
+                <span class="logo-main">BEDEM</span>
+                <span class="logo-sub">APARTMENTS · NIKŠIĆ</span>
+            </div>
+        </a>
+
+        <nav class="nav-links">
+            <a href="#hero">Home</a>
+            <a href="#listings">Apartments</a>
+            <a href="#reviews">Reviews</a>
+            <a href="#about">Our Story</a>
+            <a href="#contact">Contact</a>
+        </nav>
+
+        <a href="tel:+38267556299" class="nav-cta">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81 19.79 19.79 0 01.22 1.18 2 2 0 012.2 0h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 14z"/></svg>
+            Call Now
+        </a>
+
+        <button class="hamburger" id="hamburger" aria-label="Menu">
+            <span></span><span></span><span></span>
+        </button>
+    </div>
+</header>
+
+<!-- Mobile menu -->
+<div class="mobile-nav" id="mobileNav">
+    <a href="#hero" onclick="closeMobileNav()">Home</a>
+    <a href="#listings" onclick="closeMobileNav()">Apartments</a>
+    <a href="#reviews" onclick="closeMobileNav()">Reviews</a>
+    <a href="#about" onclick="closeMobileNav()">Our Story</a>
+    <a href="#contact" onclick="closeMobileNav()">Contact</a>
+    <a href="tel:+38269123456" class="mobile-cta">📞 Call Now</a>
+</div>
+
+
+<!-- ══════════════════════════════════════════ -->
+<!--  HERO — VIDEO BACKGROUND                  -->
+<!-- ══════════════════════════════════════════ -->
+<section id="hero" class="hero">
+    <!-- YouTube video background -->
+    <div class="hero-video-wrap">
+        <iframe
+            class="hero-iframe"
+            src
+            frameborder="0"
+            allow="autoplay; encrypted-media"
+            allowfullscreen>
+        </iframe>
+        <div class="hero-overlay"></div>
+
+    </div>
+
+    <div class="hero-content">
+        <span class="hero-eyebrow">Nikšić · Montenegro</span>
+        <h1 class="hero-headline">
+            Stay Where <br><em>History</em> Meets Home
+        </h1>
+        <p class="hero-sub">Thoughtfully designed apartments nestled beneath the ancient Bedem Fortress — where every stay becomes a memory.</p>
+
+        <div class="hero-badges">
+            <div class="badge">🅿️ Free Parking</div>
+            <div class="badge">📶 Free WiFi · 368 Mbps</div>
+            <div class="badge">⭐ 9.4 on Booking.com</div>
+        </div>
+
+        <div class="hero-actions">
+            <a href="https://wa.me/38269123456" target="_blank" class="btn-primary">Book via WhatsApp</a>
+            <a href="#listings" class="btn-ghost">Explore Apartments</a>
+        </div>
+    </div>
+
+    <div class="hero-scroll-hint">
+        <span>Scroll</span>
+        <div class="scroll-line"></div>
+    </div>
+</section>
+
+
+<!-- ══════════════════════════════════════════ -->
+<!--  LISTINGS                                 -->
+<!-- ══════════════════════════════════════════ -->
+<section id="listings" class="section listings-section">
+    <div class="container">
+        <div class="section-label">OUR RESIDENCES</div>
+        <h2 class="section-title">Select Your Stay</h2>
+        <p class="section-sub">Each apartment is individually designed, immaculately maintained, and perfectly positioned beneath the historic fortress.</p>
+
+        <div class="cards-grid">
+
+            <!-- BEDEM I — Available -->
+            <div class="apt-card available">
+                <div class="apt-card-img-wrap">
+                    <img src="assets/bedem_1.jpg" alt="Bedem I Apartment">
+                    <span class="apt-badge available-badge">Available Now</span>
+                </div>
+                <div class="apt-card-body">
+                    <div class="apt-card-top">
+                        <div>
+                            <span class="apt-location">Nikšić, Montenegro</span>
+                            <h3>Bedem I</h3>
+                        </div>
+                        <div class="apt-price">
+                            <span>from</span>
+                            <strong>€50</strong>
+                            <span>/night</span>
+                        </div>
+                    </div>
+                    <p class="apt-desc">A bright, spacious 70 m² retreat for up to 7 guests, with two private terraces — one overlooking the 4th-century fortress, the other the Trebjesa forest.</p>
+                    <div class="apt-amenities">
+                        <span>🅿️ Parking</span>
+                        <span>📶 WiFi</span>
+                        <span>❄️ AC</span>
+                        <span>🛖 2 Terraces</span>
+                        <span>🛏️ 7 Beds</span>
+                        <span>👨‍👩‍👧 Family</span>
+                    </div>
+                    <a href="bedem-1.html" class="btn-card">View & Reserve →</a>
+                </div>
+            </div>
+
+            <!-- BEDEM II — Coming Soon -->
+            <div class="apt-card coming-soon">
+                <div class="apt-card-img-wrap">
+                    <img src="assets/bedem_2.jpg" alt="Bedem II Apartment">
+                    <span class="apt-badge soon-badge">Coming Soon</span>
+                    <div class="soon-overlay">
+                        <div class="soon-content">
+                            <p>Launching</p>
+                            <strong>Summer 2025</strong>
+                        </div>
+                    </div>
+                </div>
+                <div class="apt-card-body">
+                    <div class="apt-card-top">
+                        <div>
+                            <span class="apt-location">Nikšić, Montenegro</span>
+                            <h3>Bedem II</h3>
+                        </div>
+                        <div class="apt-price muted-price">
+                            <span>from</span>
+                            <strong>TBA</strong>
+                        </div>
+                    </div>
+                    <p class="apt-desc">A second residence currently in preparation — blending historical charm with contemporary comfort. Notify me when available.</p>
+                    <div class="apt-amenities faded">
+                        <span>🅿️ Parking</span>
+                        <span>📶 WiFi</span>
+                        <span>❄️ AC</span>
+                        <span>👨‍👩‍👧 Family</span>
+                    </div>
+                    <a href="https://wa.me/38269123456?text=I'd like to be notified when Bedem II is available" target="_blank" class="btn-card-outline">Notify Me →</a>
+                </div>
+            </div>
+
+            <!-- BEDEM III — Coming Soon -->
+            <div class="apt-card coming-soon">
+                <div class="apt-card-img-wrap">
+                    <img src="assets/bedem_3.jpg" alt="Bedem III Apartment">
+                    <span class="apt-badge soon-badge">Coming Soon</span>
+                    <div class="soon-overlay">
+                        <div class="soon-content">
+                            <p>Launching</p>
+                            <strong>Late 2025</strong>
+                        </div>
+                    </div>
+                </div>
+                <div class="apt-card-body">
+                    <div class="apt-card-top">
+                        <div>
+                            <span class="apt-location">Nikšić, Montenegro</span>
+                            <h3>Bedem III</h3>
+                        </div>
+                        <div class="apt-price muted-price">
+                            <span>from</span>
+                            <strong>TBA</strong>
+                        </div>
+                    </div>
+                    <p class="apt-desc">A minimalist sanctuary — peaceful, private, and purposefully designed for those seeking calm in the heart of the city.</p>
+                    <div class="apt-amenities faded">
+                        <span>🅿️ Parking</span>
+                        <span>📶 WiFi</span>
+                        <span>❄️ AC</span>
+                        <span>👨‍👩‍👧 Family</span>
+                    </div>
+                    <a href="https://wa.me/38269123456?text=I'd like to be notified when Bedem III is available" target="_blank" class="btn-card-outline">Notify Me →</a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+<!-- ══════════════════════════════════════════ -->
+<!--  REVIEWS                                  -->
+<!-- ══════════════════════════════════════════ -->
+<section id="reviews" class="section reviews-section">
+    <div class="container">
+        <div class="section-label">GUEST EXPERIENCES</div>
+        <h2 class="section-title">What Our Guests Say</h2>
+
+        <div class="score-banner">
+            <div class="score-platform">
+                <div class="platform-name">booking<span>.</span>com</div>
+                <div class="platform-score">9.4</div>
+            </div>
+            <div class="score-divider"></div>
+            <div class="score-summary">
+                <strong>Exceptional</strong>
+                <p>Based on 92 verified guest reviews</p>
+                <div class="score-pills">
+                    <div class="pill">Cleanliness <b>9.7</b></div>
+                    <div class="pill">Staff <b>9.8</b></div>
+                    <div class="pill">Location <b>9.3</b></div>
+                    <div class="pill">Value <b>9.5</b></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="reviews-grid">
+            <div class="review-card">
+                <div class="review-header">
+                    <div class="reviewer">
+                        <div class="avatar">Z</div>
+                        <div>
+                            <h4>Zed2</h4>
+                            <span>🇨🇦 Canada · Verified Guest</span>
+                        </div>
+                    </div>
+                    <div class="review-score">9.5</div>
+                </div>
+                <p class="review-quote">"Perfect place to stay when you visit Nikšić. Big and clean apartment, great location, excellent WiFi — all was good."</p>
+                <div class="review-footer">✅ Booking.com Verified Review</div>
+            </div>
+
+            <div class="review-card featured">
+                <div class="review-header">
+                    <div class="reviewer">
+                        <div class="avatar">J</div>
+                        <div>
+                            <h4>Jana</h4>
+                            <span>Verified Guest</span>
+                        </div>
+                    </div>
+                    <div class="review-score">10</div>
+                </div>
+                <p class="review-quote">"Beautiful, clean apartment — looks even nicer than the photos. Such a nice and helpful host. Great value for the price."</p>
+                <div class="review-footer">✅ Booking.com Verified Review</div>
+            </div>
+
+            <div class="review-card">
+                <div class="review-header">
+                    <div class="reviewer">
+                        <div class="avatar">N</div>
+                        <div>
+                            <h4>Nikolay</h4>
+                            <span>Verified Guest</span>
+                        </div>
+                    </div>
+                    <div class="review-score">10</div>
+                </div>
+                <p class="review-quote">"Interesting location, very clean and cozy apartment — everything was great! Would recommend without hesitation."</p>
+                <div class="review-footer">✅ Booking.com Verified Review</div>
+            </div>
+
+            <div class="review-card">
+                <div class="review-header">
+                    <div class="reviewer">
+                        <div class="avatar">E</div>
+                        <div>
+                            <h4>Eilat</h4>
+                            <span>Verified Guest</span>
+                        </div>
+                    </div>
+                    <div class="review-score">9.0</div>
+                </div>
+                <p class="review-quote">"Very friendly host, good value for money, apartment near city centre, well equipped and very clean."</p>
+                <div class="review-footer">✅ Booking.com Verified Review</div>
+            </div>
+        </div>
+
+        <div class="reviews-cta">
+            <a href="https://www.booking.com" target="_blank" class="btn-booking">
+                <span>Read all 92 reviews on</span>
+                <strong>Booking.com</strong>
+            </a>
+        </div>
+    </div>
+</section>
+
+
+<!-- ══════════════════════════════════════════ -->
+<!--  ABOUT                                    -->
+<!-- ══════════════════════════════════════════ -->
+<section id="about" class="section about-section">
+    <div class="container about-grid">
+        <div class="about-visual">
+            <img src="assets/bedem_image.jpg" alt="Historic Bedem Fortress, Nikšić" class="about-img">
+            <div class="about-stat-card">
+                <strong>9.4</strong>
+                <span>Average Score</span>
+                <small>92 Reviews · Booking.com</small>
+            </div>
+        </div>
+
+        <div class="about-content">
+            <div class="section-label" style="text-align:left;">OUR STORY</div>
+            <h2 class="section-title" style="text-align:left;">About Bedem Apartments</h2>
+
+            <p class="about-text">Apartments Bedem began with one carefully prepared home beside the historic Bedem Fortress — whose centuries-old stone walls have watched over Nikšić through medieval times, Ottoman rule, and Montenegro's modern growth.</p>
+            <p class="about-text">Inspired by the strength, heritage, and character of this landmark, our family turned a single apartment into a growing collection of thoughtfully designed spaces rooted in hospitality and care. Each apartment reflects comfort, privacy, and warmth — created not simply as places to stay, but as welcoming homes where every guest feels part of something meaningful.</p>
+
+            <div class="about-values">
+                <div class="value-item">
+                    <div class="value-icon">🏛️</div>
+                    <div>
+                        <h4>Rooted in Heritage</h4>
+                        <p>Positioned beneath a 4th-century fortress, every stay carries a sense of place.</p>
+                    </div>
+                </div>
+                <div class="value-item">
+                    <div class="value-icon">✦</div>
+                    <div>
+                        <h4>Premium Quality</h4>
+                        <p>Fully renovated, new furniture, and maintained to the highest standards.</p>
+                    </div>
+                </div>
+                <div class="value-item">
+                    <div class="value-icon">🤝</div>
+                    <div>
+                        <h4>Personal Hospitality</h4>
+                        <p>A family business — we treat every guest as a welcomed friend.</p>
+                    </div>
+                </div>
+                <div class="value-item">
+                    <div class="value-icon">🌙</div>
+                    <div>
+                        <h4>Always Available</h4>
+                        <p>Round-the-clock support for a seamless and comfortable experience.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- ══════════════════════════════════════════ -->
+<!--  CONTACT                                  -->
+<!-- ══════════════════════════════════════════ -->
+<section id="contact" class="section contact-section">
+    <div class="container">
+        <div class="section-label">REACH US</div>
+        <h2 class="section-title">Book Your Stay</h2>
+
+        <div class="contact-grid">
+            <div class="contact-info">
+                <p class="contact-intro">The easiest way to book is directly via WhatsApp. We respond quickly and are happy to answer any question about your stay.</p>
+
+                <div class="contact-items">
+                    <a href="https://wa.me/38269123456" target="_blank" class="contact-item whatsapp">
+                        <div class="ci-icon">💬</div>
+                        <div class="ci-text">
+                            <small>WhatsApp — fastest response</small>
+                            <strong>Chat with us</strong>
+                        </div>
+                        <span class="ci-arrow">→</span>
+                    </a>
+
+                    <a href="tel:+38269123456" class="contact-item">
+                        <div class="ci-icon">📞</div>
+                        <div class="ci-text">
+                            <small>Phone</small>
+                            <strong>+382 69 123 456</strong>
+                        </div>
+                        <span class="ci-arrow">→</span>
+                    </a>
+
+                    <a href="mailto:info@bedem-apartments.com" class="contact-item">
+                        <div class="ci-icon">✉️</div>
+                        <div class="ci-text">
+                            <small>Email</small>
+                            <strong>info@bedem-apartments.com</strong>
+                        </div>
+                        <span class="ci-arrow">→</span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="map-wrap">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d46736.25754406282!2d18.905624103135543!3d42.77589886367372!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x134d43615174f885%3A0x633d2f97cfda8a61!2sNik%C5%A1i%C4%87%2C%20Montenegro!5e0!3m2!1sen!2srs!4v1700000000000!5m2!1sen!2srs"
+                    width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy">
+                </iframe>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- ══════════════════════════════════════════ -->
+<!--  FOOTER                                   -->
+<!-- ══════════════════════════════════════════ -->
+<footer class="site-footer">
+    <div class="footer-inner">
+        <div class="footer-top">
+            <div class="footer-brand">
+                <div class="footer-logo">
+                    <span class="logo-icon">⬡</span> BEDEM APARTMENTS
+                </div>
+                <p>Thoughtfully designed stays beneath the ancient Bedem Fortress — where history meets home in Nikšić, Montenegro.</p>
+                <div class="footer-social">
+                    <a href="#">Instagram</a>
+                    <a href="#">Booking.com</a>
+                </div>
+            </div>
+
+            <div class="footer-links">
+                <h4>Explore</h4>
+                <a href="#hero">Home</a>
+                <a href="#listings">Apartments</a>
+                <a href="#reviews">Reviews</a>
+                <a href="#about">Our Story</a>
+            </div>
+
+            <div class="footer-links">
+                <h4>Contact</h4>
+                <a href="https://wa.me/38269123456">WhatsApp</a>
+                <a href="tel:+38269123456">+382 69 123 456</a>
+                <a href="mailto:info@bedem-apartments.com">Email Us</a>
+            </div>
+
+            <div class="footer-cta-block">
+                <h4>Ready to book?</h4>
+                <p>Reach out and we'll confirm your reservation within hours.</p>
+                <a href="https://wa.me/38269123456" target="_blank" class="footer-book-btn">Book via WhatsApp</a>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>© 2026 Bedem Apartments · Nikšić, Montenegro · All rights reserved.</p>
+            <p>Built with care for our guests.</p>
+        </div>
+    </div>
+</footer>
+
+
+<script src="app.js"></script>
+<script>
+    // Sticky header
+    const header = document.getElementById('mainHeader');
+    window.addEventListener('scroll', () => {
+        header.classList.toggle('scrolled', window.scrollY > 60);
+    });
+
+    // Hamburger menu
+    const hamburger = document.getElementById('hamburger');
+    const mobileNav = document.getElementById('mobileNav');
+    hamburger.addEventListener('click', () => {
+        hamburger.classList.toggle('open');
+        mobileNav.classList.toggle('open');
+    });
+
+    function closeMobileNav() {
+        hamburger.classList.remove('open');
+        mobileNav.classList.remove('open');
+    }
+
+    // Animate on scroll
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(e => {
+            if (e.isIntersecting) {
+                e.target.classList.add('visible');
+            }
+        });
+    }, { threshold: 0.1 });
+
+    document.querySelectorAll('.apt-card, .review-card, .value-item, .contact-item').forEach(el => {
+        el.classList.add('fade-up');
+        observer.observe(el);
+    });
+</script>
+
+</body>
+</html>
